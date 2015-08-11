@@ -107,6 +107,6 @@ for sample in sequences.keys():
 	seqs_string[sample]="".join(sequences[sample])
 records=[]
 write_vcf("output_all_f"+str(ad_threshold)+"_c"+str(dp_threshold)+".7.vcf", input_name, good_vcfs)
-#for sample in seqs_string:
-#	records.append(SeqRecord(Seq(seqs_string[sample]), id=sample, description=""))
-#SeqIO.write(records, "output_all_f"+str(ad_threshold)+"_c"+str(dp_threshold)+".7.fasta", "fasta")
+for sample in seqs_string:
+	records.append(SeqRecord(Seq(seqs_string[sample]), id=sample, description=""))
+SeqIO.write(records, "output_all_f"+str(ad_threshold)+"_c"+str(dp_threshold)+".7.fasta", "fasta")
