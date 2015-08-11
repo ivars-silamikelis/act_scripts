@@ -7,7 +7,7 @@ void make_read(char * s);
 char * char_repeat( int n, char c);
 char * create_revcom(char * sequence);
 /* no DNS sekvences izveido 200 bp garus nolasījumus ar noteiktu pārklājumu */
-//Compile it with gcc shredder4.c -o shredder
+//Compile it with gcc shredder.c -o shredder
 int main(int argc, char *argv[])
 { 
   
